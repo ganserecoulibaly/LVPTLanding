@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #f5f0ea;
+    color: #1e2d3d;
+  }
+}
+
+@layer components {
+  .card-polaroid {
+    @apply bg-white p-3 shadow-md rotate-[-1deg] inline-block;
+  }
+  .card-polaroid img {
+    @apply w-full object-cover;
+  }
+  .card-polaroid-caption {
+    @apply font-handwriting text-sm text-navy mt-2 text-center;
+  }
+  .section-eyebrow {
+    @apply font-handwriting text-coral text-lg mb-2;
+  }
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-navy font-medium leading-tight;
+  }
+  .section-subtitle {
+    @apply font-sans text-navy/70 text-base md:text-lg leading-relaxed;
+  }
+  .btn-primary {
+    @apply bg-coral text-white font-sans font-medium px-7 py-3 rounded-full hover:bg-coral/90 transition-all duration-200 inline-flex items-center gap-2;
+  }
+  .btn-ghost {
+    @apply text-navy font-sans font-medium underline underline-offset-4 hover:text-coral transition-colors duration-200;
+  }
+  .module-card {
+    @apply bg-cream rounded-2xl p-6 relative overflow-hidden;
+  }
+  .module-number {
+    @apply absolute top-4 right-5 text-navy/20 font-serif text-sm font-medium;
+  }
+  .module-icon {
+    @apply w-10 h-10 flex items-center justify-center rounded-xl bg-white/80 text-coral mb-6;
+  }
+}

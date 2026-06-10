@@ -1,0 +1,107 @@
+import React from 'react'
+
+export default function Hero() {
+  return (
+    <section className="min-h-screen bg-cream flex items-center pt-20">
+      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+
+        {/* Left content */}
+        <div>
+          <div className="flex items-center gap-2 mb-6">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8735a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2c-.5.1-.7.6-.4 1L6 12l-2 3.5c-.3.5 0 1.1.5 1.3l4 1.5 1.5 4c.2.5.8.8 1.3.5L14 20l4.6 4.6c.4.4 1 .1 1-.4"/>
+            </svg>
+            <span className="font-sans text-navy/60 text-xs uppercase tracking-widest font-medium">Le compagnon des voyageurs curieux</span>
+          </div>
+
+          <h1 className="font-serif text-5xl md:text-6xl text-navy font-medium leading-tight mb-6">
+            Chaque <em className="text-coral not-italic">détour</em><br />
+            mérite d'être<br />
+            raconté.
+          </h1>
+
+          <p className="section-subtitle mb-10 max-w-md">
+            Un carnet de voyage moderne pour garder une trace de tes plats préférés, dépenses, musées, playlists, hébergements — et tout partager avec une communauté de voyageurs.
+          </p>
+
+          <div className="flex items-center gap-6 flex-wrap">
+            <a href="#liste" className="btn-primary">
+              Réserver ma place
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+            </a>
+            <a href="#services" className="btn-ghost">Découvrir les services</a>
+          </div>
+
+          {/* Social proof */}
+          <div className="flex items-center gap-3 mt-10">
+            <div className="flex -space-x-2">
+              {['#e8c4b8','#c4d4e8','#c8e0d0'].map((color, i) => (
+                <div key={i} className="w-8 h-8 rounded-full border-2 border-cream" style={{ backgroundColor: color }} />
+              ))}
+            </div>
+            <span className="font-sans text-navy/60 text-sm">+200 voyageurs déjà inscrits sur la liste d'attente</span>
+          </div>
+        </div>
+
+        {/* Right — polaroid stack */}
+        <div className="relative flex justify-center items-center h-96 md:h-auto">
+          {/* Annotation */}
+          <span className="absolute top-0 right-8 font-handwriting text-coral text-lg rotate-3 z-10">
+            ✦ ton carnet, partout
+          </span>
+
+          {/* Polaroid 1 — map/planning */}
+          <div className="absolute top-8 left-4 md:left-8 bg-white p-3 shadow-lg rotate-[-4deg] z-20 w-52">
+            <div className="w-full h-36 bg-gradient-to-br from-amber-100 to-amber-200 rounded flex items-center justify-center overflow-hidden">
+              <div className="text-center">
+                <div className="grid grid-cols-4 gap-0.5 p-2">
+                  {Array.from({length:16}).map((_,i) => (
+                    <div key={i} className="w-5 h-4 rounded-sm" style={{backgroundColor: `hsl(${30+i*8},${40+i*3}%,${65+i}%)`}} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <p className="font-handwriting text-navy text-sm mt-2 text-center">Planning ✏️</p>
+          </div>
+
+          {/* Polaroid 2 — food */}
+          <div className="absolute bottom-4 right-0 md:right-4 bg-white p-3 shadow-lg rotate-[3deg] z-20 w-52">
+            <div className="w-full h-36 bg-gradient-to-br from-orange-900 via-orange-700 to-amber-800 rounded overflow-hidden flex items-center justify-center">
+              {/* Abstract restaurant scene */}
+              <div className="relative w-full h-full">
+                <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-black/30" />
+                <div className="absolute top-2 left-2 right-2 flex justify-around">
+                  {['🏮','🏮','🏮'].map((e,i) => <span key={i} className="text-xl">{e}</span>)}
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 flex gap-1">
+                  {Array.from({length:6}).map((_,i) => (
+                    <div key={i} className="h-8 w-6 rounded-t-sm bg-amber-900/80" />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <p className="font-handwriting text-navy text-sm mt-2 text-center">Hanoi — bún chả ★★★★★</p>
+          </div>
+
+          {/* Badge */}
+          <div className="absolute bottom-16 left-0 md:left-4 bg-white rounded-2xl px-4 py-3 shadow-md z-30 flex items-center gap-2">
+            <div className="w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8735a" strokeWidth="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+              </svg>
+            </div>
+            <div>
+              <p className="font-serif text-navy text-sm font-medium leading-none">42 pays</p>
+              <p className="font-sans text-navy/50 text-xs mt-0.5">tracés sur la carte</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
