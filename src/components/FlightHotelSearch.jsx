@@ -15,6 +15,8 @@ const emptyForm = {
   email: '',
   telephone: '',
   newsletter: false,
+  budget: '',
+  typeHebergement: '',
 }
 
 export default function FlightHotelSearch() {
@@ -62,7 +64,7 @@ export default function FlightHotelSearch() {
   }
 
   return (
-    <section className="bg-cream pt-16 pb-20">
+    <section id="recherche" className="bg-cream pt-16 pb-20">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Eyebrow + titre, avec les classes utilitaires du projet */}
@@ -72,7 +74,10 @@ export default function FlightHotelSearch() {
             Et si on cherchait <em className="text-coral not-italic">ton prochain billet</em> ?
           </h2>
           <p className="section-subtitle max-w-md mx-auto">
-            Vols ou hébergements, on te trouve les meilleures options pour poser ta valise sans te prendre la tête.
+            Vols et/ou hébergements, on te trouve les meilleures options pour poser ta valise sans te prendre la tête.
+          </p>
+          <p className="font-sans text-xl font-bold text-coral/70 mt-2">
+             100% gratuit, sans inscription
           </p>
         </div>
 
@@ -188,6 +193,25 @@ export default function FlightHotelSearch() {
                 <Field label="Email" required>
                   <input type="email" placeholder="lea.martin@email.com" required className="search-input"
                     value={form.email} onChange={(e) => update('email', e.target.value)} />
+                </Field>
+                <Field label="Budget max / nuit (€)">
+                   <input type="number" min="0" placeholder="ex : 80" className="search-input"
+                    value={form.budget} onChange={(e) => update('budget', e.target.value)} />
+                </Field>
+                <Field label="Type d'hébergement">
+                  <select className="search-input" value={form.typeHebergement} onChange={(e) => update('typeHebergement', e.target.value)}>
+                    <option value="">Pas de préférence</option>
+                    <option value="hotel">Hôtel</option>
+                    <option value="auberge">Auberge de jeunesse</option>
+                    <option value="airbnb">Airbnb / Location entre particuliers</option>
+                    <option value="camping">Camping</option>
+                    <option value="guesthouse">Guesthouse / Chambre d'hôtes</option>
+                    <option value="glamping">Glamping</option>
+                    <option value="resort">Resort / Club</option>
+                    <option value="apart-hotel">Apart'hôtel</option>
+                    <option value="bateau">Bateau / Péniche</option>
+                    <option value="insolite">Hébergement insolite (cabane, igloo…)</option>
+                  </select>
                 </Field>
               </div>
             )}

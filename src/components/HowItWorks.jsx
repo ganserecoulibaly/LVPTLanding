@@ -3,18 +3,18 @@ import React from 'react'
 const steps = [
   {
     num: '01',
-    title: 'Rejoins la liste',
+    title: "Embarquer dans l'aventure",
     desc: 'Quelques infos sur toi et tes envies de voyage, pour qu\'on configure ton carnet aux petits oignons.',
   },
   {
     num: '02',
-    title: 'Reçois ton accès',
-    desc: 'Tu es prévenu·e dès l\'ouverture. Tu démarres avec des modèles prêts pour ta zone géographique.',
+    title: 'Bienvenue à bord',
+    desc: "On t'envoie nos pépites et inspirations directement par mail en attendant le grand lancement.",
   },
   {
     num: '03',
     title: 'Note, partage, repars',
-    desc: 'Plats, dépenses, hébergements, anecdotes — et échange avec d\'autres voyageurs sur leur expérience.',
+    desc: "Plats, dépenses, hébergements, anecdotes — et échange avec d\'autres voyageurs sur leur expérience, dès le grand lancement de l'application !",
   },
 ]
 

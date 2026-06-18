@@ -34,7 +34,7 @@ export default function ComingSoon() {
           </div>
           <div className="md:pt-10">
             <p className="section-subtitle">
-              Deux modules en route — pensés avec les voyageurs de la liste d'attente. Rejoins-la pour voter sur l'ordre de sortie.
+              Deux modules en route — pensés avec les voyageurs. Rejoins-la pour proposer et voter sur l'ordre de sortie et la fonctionnalité qui te plairait.
             </p>
           </div>
         </div>

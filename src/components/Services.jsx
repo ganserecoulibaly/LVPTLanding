@@ -64,7 +64,7 @@ const modules = [
   },
   {
     num: '02', icon: <IconFork />, title: 'Carnet gastronomique',
-    desc: 'Note chaque plat local : resto, ville, pays, prix et étoiles. Tes meilleures adresses, sauvegardées.',
+    desc: 'Note chaque plat local : resto, ville, pays, prix et étoiles. Tes meilleures adresses, sauvegardées — et découvre celles des autres voyageurs.',
     color: 'bg-cream-dark', textColor: 'text-navy',
     visual: (
       <div className="mt-4 bg-white p-3 shadow-md rotate-[-1.5deg] inline-block">
@@ -84,7 +84,7 @@ const modules = [
   },
   {
     num: '03', icon: <IconWallet />, title: 'Journal de dépenses',
-    desc: 'Suis tes dépenses par catégorie (transport, logement, food...) et compare le coût réel entre destinations.',
+    desc: 'Suis tes dépenses par catégorie (transport, logement, food...) et compare le coût réel entre destinations — et une fois leur voyage terminé, accède aux carnets des autres pour savoir combien ça coûte vraiment.',
     color: 'bg-white', textColor: 'text-navy',
     visual: (
       <div className="mt-4 bg-white p-3 shadow-md rotate-[-1deg] inline-block">

@@ -31,8 +31,8 @@ export default function Navbar() {
           <a href="#communaute" className="font-sans text-navy/70 hover:text-coral transition-colors text-sm">Communauté</a>
         </div>
 
-        <a href="#liste" className="btn-primary text-sm py-2.5 px-5">
-          Rejoindre la liste
+        <a href="#recherche" className="btn-primary text-sm py-2.5 px-5">
+          Rejoindre l'aventure
         </a>
       </div>
     </nav>
