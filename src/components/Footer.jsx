@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function Footer() {
   return (
     <footer className="bg-navy text-white">
@@ -21,19 +20,21 @@ export default function Footer() {
               Le carnet qui voyage <em className="not-italic text-coral">avec</em><br />toi.
             </p>
           </div>
-
           {/* Links */}
           <div>
             <p className="font-sans text-white/40 text-xs uppercase tracking-widest mb-5">Explorer</p>
             <ul className="space-y-3">
-              {['Services', 'Comment ça marche', 'Communauté', "Liste d'attente"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="font-sans text-white/70 hover:text-coral transition-colors text-sm">{link}</a>
+              {[
+                { label: 'Services', href: '#services' },
+                { label: 'Comment ça marche', href: '#comment' },
+                { label: 'Nous Rejoindre', href: '#recherche' },
+              ].map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="font-sans text-white/70 hover:text-coral transition-colors text-sm">{link.label}</a>
                 </li>
               ))}
             </ul>
           </div>
-
           {/* Contact */}
           <div>
             <p className="font-sans text-white/40 text-xs uppercase tracking-widest mb-5">Restons en contact</p>
@@ -57,7 +58,6 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-sans text-white/30 text-xs">© 2026 Le Voyage Pour Tous</p>
           <p className="font-handwriting text-white/30 text-sm">✦ Bon voyage</p>
