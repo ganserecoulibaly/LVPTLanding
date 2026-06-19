@@ -34,18 +34,16 @@ export default function WaitlistForm() {
                 </li>
               ))}
             </ul>
-            <div className="flex justify-center">
-              <button
-                type="button"
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="flex items-center gap-1.5 font-sans text-navy/40 text-xs hover:text-coral transition-colors duration-200"
-              >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 19V5M5 12l7-7 7 7"/>
-                </svg>
-                Je rejoins l'aventure ! ↑
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="w-full bg-coral-light hover:bg-coral text-white font-sans font-medium py-4 rounded-full transition-colors duration-200 flex items-center justify-center gap-2 mt-2"
+            >
+              Je rejoins l'aventure !
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
