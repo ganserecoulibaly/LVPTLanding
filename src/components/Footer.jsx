@@ -39,17 +39,22 @@ export default function Footer() {
           <div>
             <p className="font-sans text-white/40 text-xs uppercase tracking-widest mb-5">Restons en contact</p>
             <div className="flex gap-3 mb-6">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-coral transition-colors">
+              <a href="mailto:levoyagepourtous@gmail.com" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-coral transition-colors">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-coral transition-colors">
+              <a href="https://www.instagram.com/levoyagepourtous" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-coral transition-colors">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <circle cx="12" cy="12" r="4"/>
                   <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@levoyagepourtous" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-coral transition-colors">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="none">
+                  <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/>
                 </svg>
               </a>
             </div>
