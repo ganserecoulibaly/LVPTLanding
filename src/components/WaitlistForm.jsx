@@ -36,7 +36,7 @@ export default function WaitlistForm() {
             </ul>
             <button
               type="button"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => document.getElementById('recherche')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full bg-coral-light hover:bg-coral text-white font-sans font-medium py-4 rounded-full transition-colors duration-200 flex items-center justify-center gap-2 mt-2"
             >
               Je rejoins l'aventure !
