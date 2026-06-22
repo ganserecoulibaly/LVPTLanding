@@ -20,9 +20,20 @@ export default function Hero() {
             raconté.
           </h1>
 
-          <p className="section-subtitle mb-10 max-w-md">
-            Un carnet de voyage moderne pour garder une trace de tes plats préférés, dépenses, musées, playlists, hébergements — et tout partager avec une communauté de voyageurs.
-          </p>
+<div className="flex items-start gap-3 max-w-md mb-3">
+  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#F5C4B3] flex items-center justify-center mt-px">
+    <i className="ti ti-plane-departure text-[15px] text-[#712B13]" aria-hidden="true"></i>
+  </div>
+  <p className="text-base font-medium text-[#2C2C2A] leading-snug m-0">
+    Trouve ton billet d'avion et ton hébergement idéal — <span className="text-[#993C1D]">gratuitement</span>, en quelques clics.
+  </p>
+</div>
+
+<p className="section-subtitle mb-10 max-w-md pl-[38px]">
+  Un carnet de voyage moderne pour garder une trace de tes plats préférés, dépenses, musées, visites, playlists — et tout partager avec une communauté de voyageurs riche en conseils.
+</p>
+
+<div className="flex items-center gap-6 flex-wrap">
 
           <div className="flex items-center gap-6 flex-wrap">
             <a href="#recherche" className="btn-primary justify-center whitespace-nowrap">
