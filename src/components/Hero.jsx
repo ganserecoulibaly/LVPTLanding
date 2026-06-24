@@ -1,4 +1,5 @@
 import React from 'react'
+import { BookOpen, Gift } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -20,22 +21,27 @@ export default function Hero() {
             raconté.
           </h1>
 
-          {/* Bloc 1 — recherche gratuite vols/hébergements */}
+
+        {/* Bloc 1 — carnet communautaire */}
           <div className="flex items-start gap-3 max-w-md mb-3">
             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center mt-px">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8735a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2c-.5.1-.7.6-.4 1L6 12l-2 3.5c-.3.5 0 1.1.5 1.3l4 1.5 1.5 4c.2.5.8.8 1.3.5L14 20l4.6 4.6c.4.4 1 .1 1-.4"/>
-              </svg>
+              <BookOpen className="w-3.5 h-3.5" stroke="#e8735a" strokeWidth={2} />
             </div>
-            <p className="font-sans text-navy text-base font-medium leading-snug m-0">
-              Trouve ton billet d'avion et ton hébergement idéal — <span className="text-coral">gratuitement</span>, en quelques clics.
+            <p className="font-sans text-navy text-base font-normal leading-snug m-0">
+              <span className="font-medium">Un carnet de voyage moderne</span> pour garder une trace de tes plats préférés, dépenses, musées & visites, hébergements, playlists et documents — et accéder à ce que d'autres voyageurs ont déjà <span className="text-coral">noté, conseillé ou partagé</span>.
             </p>
           </div>
 
-          {/* Bloc 2 — carnet communautaire */}
-          <p className="section-subtitle mb-10 max-w-md pl-[38px]">
-            Un carnet de voyage moderne pour garder une trace de tes plats préférés, dépenses, musées, visites, playlists — et tout partager avec une communauté de voyageurs riche en conseils.
-          </p>
+          {/* Bloc 2 — recherche gratuite vols/hébergements */}
+          <div className="flex items-start gap-3 max-w-md mb-10">
+            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center mt-px">
+              <Gift className="w-3.5 h-3.5" stroke="#e8735a" strokeWidth={2} />
+            </div>
+            <p className="section-subtitle">
+              Et pour commencer l'aventure : <span className="text-[#D85A30] font-medium">deux modules gratuits</span>, dont la recherche de vols & hébergements.
+            </p>
+          </div>
+
 
           <div className="flex items-center gap-6 flex-wrap">
             <a href="#recherche" className="btn-primary justify-center whitespace-nowrap">
