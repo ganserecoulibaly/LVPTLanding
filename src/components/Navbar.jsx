@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Nav links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="font-sans text-navy/70 hover:text-coral transition-colors text-sm">Services</a>
+          <a href="#services" className="font-sans text-navy/70 hover:text-coral transition-colors text-sm">Modules</a>
           <a href="#comment" className="font-sans text-navy/70 hover:text-coral transition-colors text-sm">Comment ça marche</a>
           <a href="#communaute" className="font-sans text-navy/70 hover:text-coral transition-colors text-sm">Communauté</a>
         </div>

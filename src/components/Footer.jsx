@@ -25,7 +25,7 @@ export default function Footer() {
             <p className="font-sans text-white/40 text-xs uppercase tracking-widest mb-5">Explorer</p>
             <ul className="space-y-3">
               {[
-                { label: 'Services', href: '#services' },
+                { label: 'Modules', href: '#services' },
                 { label: 'Comment ça marche', href: '#comment' },
                 { label: 'Nous Rejoindre', href: '#recherche' },
               ].map((link) => (
