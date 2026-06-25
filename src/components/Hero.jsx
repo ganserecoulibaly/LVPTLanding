@@ -22,25 +22,34 @@ export default function Hero() {
           </h1>
 
 
-        {/* Bloc 1 — carnet communautaire */}
-          <div className="flex items-start gap-3 max-w-md mb-3">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center mt-px">
-              <BookOpen className="w-3.5 h-3.5" stroke="#e8735a" strokeWidth={2} />
-            </div>
-            <p className="font-sans text-navy text-base font-normal leading-snug m-0">
-              <span className="font-medium">Un carnet de voyage moderne</span> pour garder une trace de tes plats préférés, dépenses, musées & visites, hébergements, playlists et documents — et accéder à ce que d'autres voyageurs ont déjà <span className="text-coral">noté, conseillé ou partagé</span>.
-            </p>
-          </div>
+{/* Bloc 1 — carnet communautaire */}
+<div className="flex items-start gap-3 max-w-md mb-3">
+  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center mt-px">
+    <BookOpen className="w-3.5 h-3.5" stroke="#e8735a" strokeWidth={2} />
+  </div>
+  <p className="font-sans text-navy text-base font-normal leading-relaxed m-0">
+    <span className="bg-[#D85A30] text-[#FAECE7] px-2 py-0.5 rounded-md font-medium whitespace-nowrap">
+      Un carnet de voyage moderne
+    </span>{' '}
+    pour garder une trace de tes plats préférés, dépenses, musées & visites, hébergements, playlists et documents — et accéder à ce que d'autres voyageurs ont déjà{' '}
+    <span className="bg-[#D85A30] text-[#FAECE7] px-2 py-0.5 rounded-md font-medium whitespace-nowrap">
+      noté, conseillé ou partagé
+    </span>.
+  </p>
+</div>
 
-          {/* Bloc 2 — recherche gratuite vols/hébergements */}
-          <div className="flex items-start gap-3 max-w-md mb-10">
-            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center mt-px">
-              <Gift className="w-3.5 h-3.5" stroke="#e8735a" strokeWidth={2} />
-            </div>
-            <p className="section-subtitle">
-              Et pour commencer l'aventure : <span className="text-[#D85A30] font-medium">deux modules gratuits</span>, dont la recherche de vols & hébergements.
-            </p>
-          </div>
+{/* Bloc 2 — recherche gratuite vols/hébergements */}
+<div className="flex items-start gap-3 max-w-md mb-10">
+  <div className="flex-shrink-0 w-7 h-7 rounded-full bg-coral/20 flex items-center justify-center mt-px">
+    <Gift className="w-3.5 h-3.5" stroke="#e8735a" strokeWidth={2} />
+  </div>
+  <p className="section-subtitle">
+    Et pour commencer l'aventure :{' '}
+    <span className="bg-[#D85A30] text-[#FAECE7] px-2 py-0.5 rounded-md font-medium whitespace-nowrap">
+      deux modules gratuits
+    </span>, dont la recherche de vols & hébergements.
+  </p>
+</div>
 
 
           <div className="flex items-center gap-6 flex-wrap">
