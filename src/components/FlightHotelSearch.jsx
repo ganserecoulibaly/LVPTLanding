@@ -4,11 +4,25 @@ import AirportAutocomplete from './AirportAutocomplete'
 // 👉 Remplace cette clé par la tienne, générée sur https://web3forms.com/
 const WEB3FORMS_KEY = '130e4580-30bb-453f-9d8e-040faa4698f3'
 
+// Calcule la date du jour et J+1 au format AAAA-MM-JJ (format attendu par <input type="date">)
+function getDefaultDates() {
+  const today = new Date()
+  const tomorrow = new Date(today)
+  tomorrow.setDate(today.getDate() + 1)
+
+  const format = (d) => d.toISOString().split('T')[0] // -> "2026-06-26"
+
+  return {
+    aller: format(today),
+    retour: format(tomorrow),
+  }
+}
+
 const emptyForm = {
   origine: '',
   destination: '',
-  aller: '',
-  retour: '',
+  aller: getDefaultDates().aller,
+  retour: getDefaultDates().retour,
   adultes: 1,
   enfants: 0,
   prenom: '',
