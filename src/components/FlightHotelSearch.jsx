@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import AirportAutocomplete from './AirportAutocomplete'
 
 // 👉 Remplace cette clé par la tienne, générée sur https://web3forms.com/
 const WEB3FORMS_KEY = '130e4580-30bb-453f-9d8e-040faa4698f3'
@@ -115,14 +116,18 @@ export default function FlightHotelSearch() {
           <form onSubmit={handleSubmit}>
             {mode === 'vols' ? (
               <div className="grid md:grid-cols-2 gap-4">
-                <Field label="Je pars de">
-                  <input type="text" placeholder="Paris (CDG)" className="search-input"
-                    value={form.origine} onChange={(e) => update('origine', e.target.value)} />
-                </Field>
-                <Field label="Je vais à">
-                  <input type="text" placeholder="Hanoï (HAN)" className="search-input"
-                    value={form.destination} onChange={(e) => update('destination', e.target.value)} />
-                </Field>
+                <AirportAutocomplete
+                  label="Je pars de"
+                  placeholder="Paris (CDG)"
+                  value={form.origine}
+                  onChange={(val) => update('origine', val)}
+                />
+                <AirportAutocomplete
+                  label="Je vais à"
+                  placeholder="Hanoï (HAN)"
+                  value={form.destination}
+                  onChange={(val) => update('destination', val)}
+                />
                 <Field label="Aller">
                   <input type="date" className="search-input"
                     value={form.aller} onChange={(e) => update('aller', e.target.value)} />
