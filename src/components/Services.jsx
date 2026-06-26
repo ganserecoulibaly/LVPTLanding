@@ -118,7 +118,7 @@ const modules = [
     )
   },
   {
-    num: '05', icon: <IconMuseum />, title: 'Tracker musées & sites',
+    num: '05', icon: <IconMuseum />, title: 'Tracker activités, musées & sites',
     desc: 'Coups de cœur, anecdotes, trucs & astuces pour éviter les pièges à touristes.',
     color: 'bg-cream-dark', textColor: 'text-navy',
     visual: (
