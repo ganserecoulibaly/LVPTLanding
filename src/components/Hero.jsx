@@ -47,7 +47,7 @@ export default function Hero() {
     Et pour commencer l'aventure :{' '}
     <span className="bg-[#D85A30] text-[#FAECE7] px-2 py-0.5 rounded-md font-medium whitespace-nowrap">
       deux modules gratuits
-    </span>, dont la recherche de vols & hébergements.
+    </span>, dont la recherche de vols/hébergements et Voyage Commun.
   </p>
 </div>
 
